@@ -45,7 +45,8 @@ class Deconvolution2D(link.Link):
         deterministic (bool): The output of this link can be
             non-deterministic when it uses cuDNN.
             If this option is ``True``, then it forces cuDNN to use
-            a deterministic algorithm.
+            a deterministic algorithm. This option is only available for
+            cuDNN version >= v4.
 
     The filter weight has four dimensions :math:`(c_I, c_O, k_H, k_W)`
     which indicate the number of the number of input channels, output channels,

@@ -36,7 +36,8 @@ class Convolution2D(link.Link):
         deterministic (bool): The output of this link can be
             non-deterministic when it uses cuDNN.
             If this option is ``True``, then it forces cuDNN to use
-            a deterministic algorithm.
+            a deterministic algorithm. This option is only available for
+            cuDNN version >= v4.
 
     .. seealso::
        See :func:`chainer.functions.convolution_2d` for the definition of
